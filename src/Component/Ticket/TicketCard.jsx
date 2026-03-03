@@ -40,7 +40,7 @@
                 Move to In Progress
             </button>
         ) : (
-            <span className="in-progress-label">In Progress</span>
+            <span className="in-progress-label">In-Progress</span>
         )}
     </div>
     <p className="ticket-description my-4">{ticket.description}</p>

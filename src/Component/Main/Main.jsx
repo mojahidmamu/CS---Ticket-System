@@ -30,9 +30,9 @@ import TicketCard from '../Ticket/TicketCard';
     return (
         <div className="app-container">
         <header className="app-header">
-            <h1 className='font-bold text-xl'>Customer Tickets</h1>
+            <h1 className='font-bold text-xl my-4'>Customer Tickets</h1>
             <div className="in-progress-banner">
-            In Progress: {inProgressTickets.length}
+                {/* In Progress: {inProgressTickets.length} */}
             </div>
         </header>
 
