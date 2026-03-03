@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({inProgressCount }) => {
     return (
         <div className="flex flex-col sm:flex-row gap-4 p-4">
             {/* In-Progress Card */}
@@ -11,7 +11,7 @@ const Banner = () => {
                 }}
             >
                 <h2 className="text-lg font-semibold mb-2">In-Progress</h2>
-                <p className="text-4xl font-bold">0</p>
+                <p className="text-4xl font-bold">{inProgressCount}</p>
             </div>
 
             {/* Resolved Card */}

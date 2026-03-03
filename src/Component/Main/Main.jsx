@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import TaskStatus from '../Ticket/TaskStatus';
 import TicketCard from '../Ticket/TicketCard'; 
 
-    const Main = () => {
+const Main = ( { inProgressTickets, setInProgressTickets }) => {
     const [tickets, setTickets] = useState([]);
-    const [inProgressTickets, setInProgressTickets] = useState([]);
+    // const [inProgressTickets, setInProgressTickets] = useState([]);
 
     useEffect(() => {
         fetch("/Data.json")

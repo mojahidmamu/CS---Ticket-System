@@ -3,19 +3,26 @@ import Main from './Component/Main/Main'
 import Navbar from './Component/Navbar/Navbar'
 import Banner from './Component/Banner/Banner'
 import './index.css'
+import { useState } from 'react'
 
 function App() { 
 
+  const [inProgressTickets, setInProgressTickets] = useState([]);
+
   return (
     <>
-      <Navbar></Navbar>
-      <Banner></Banner> 
+      <Navbar />
+      <Banner inProgressCount={inProgressTickets.length} />
       <div className='mb-10'>
-        <Main></Main>
+        <Main
+          inProgressTickets={inProgressTickets}
+          setInProgressTickets={setInProgressTickets}
+        />
       </div>
-      <Footer></Footer>
+
+      <Footer />
     </>
   )
 }
 
-export default App
+export default App;
