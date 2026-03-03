@@ -3,7 +3,7 @@ import TaskStatus from '../Ticket/TaskStatus';
 import TicketCard from '../Ticket/TicketCard';
 
 const Main = () => {
-    const [tickets, setTickets] = useState(0);
+    const [tickets, setTickets] = useState([]);
     const [inProgressTickets, setInProgressTickets] = useState([]);
 
     useEffect(() => {
@@ -48,10 +48,16 @@ const Main = () => {
             <div>
                 <div>
                     {
-                        tickets.filter(t => t.status !== "completed").map(ticket => (
-                            <TicketCard key={ticket.id} ticket={ticket} onMoveToInProgress={handleMoveToInProgress} 
-                            isInProgress={inProgressTickets.some(t => t.id === ticket.id)}/>
+                    Array.isArray(tickets) 
+                        ? tickets.filter(t => t.status !== "completed").map(ticket => (
+                            <TicketCard 
+                            key={ticket.id} 
+                            ticket={ticket} 
+                            onMoveToInProgress={handleMoveToInProgress} 
+                            isInProgress={inProgressTickets.some(t => t.id === ticket.id)}
+                            />
                         ))
+                        : null
                     }
                 </div>
 
