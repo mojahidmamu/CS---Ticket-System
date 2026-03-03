@@ -10,7 +10,9 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner> 
-      <Main></Main>
+      <div className='mb-10'>
+        <Main></Main>
+      </div>
       <Footer></Footer>
     </>
   )

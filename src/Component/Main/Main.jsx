@@ -30,15 +30,15 @@ import TicketCard from '../Ticket/TicketCard';
     return (
         <div className="app-container">
         <header className="app-header">
-            <h1>Customer Tickets</h1>
+            <h1 className='font-bold text-xl'>Customer Tickets</h1>
             <div className="in-progress-banner">
             In Progress: {inProgressTickets.length}
             </div>
         </header>
 
-        <div className="main-content">
-            {/* Left: Ticket Cards */}
-            <div className="tickets-grid">
+        <div className="main-content flex gap-2">
+        {/* Left: Ticket Cards */}
+        <div className="tickets-grid grid grid-cols-1 sm:grid-cols-2 gap-4 w-3/4 mx-auto">
             {Array.isArray(tickets) &&
                 tickets
                 .filter((t) => t.status !== "completed")
@@ -53,7 +53,7 @@ import TicketCard from '../Ticket/TicketCard';
             </div>
 
             {/* Right: Task Status Section */}
-            <div className="task-status-wrapper">
+            <div className="task-status-wrappe w-1/4">
             <TaskStatus inProgressTickets={inProgressTickets} onComplete={handleCompleteTicket} />
             </div>
         </div>

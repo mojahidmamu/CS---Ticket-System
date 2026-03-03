@@ -1,4 +1,5 @@
     import "./TicketCard.css";
+    import Calender from "../../assets/Calender.png";
 
     const TicketCard = ({ ticket, onMoveToInProgress, isInProgress }) => {
     // Priority class assign
@@ -27,32 +28,44 @@
 
     return (
         <div className={`ticket-card ${isInProgress ? "in-progress" : ""}`}>
-        <div className="ticket-header">
-            <span className="ticket-id">#{ticket.id}</span>
-            <span className={`priority-badge ${getPriorityClass(ticket.priority)}`}>
-            {ticket.priority} PRIORITY
-            </span>
-        </div>
+     
 
-        <h3 className="ticket-title">{ticket.title}</h3>
-        <p className="ticket-description">{ticket.description}</p>
-
-        <div className="ticket-footer">
-            <span className="customer-name">{ticket.customer}</span>
-            <span className="ticket-date">{formatDate(ticket.createdAt)}</span>
-        </div>
-
+    <div className="flex justify-between items-center"> 
+        <h3 className="ticket-title font-bold">{ticket.title}</h3>
         {!isInProgress ? (
             <button
-            className="move-btn"
-            onClick={() => onMoveToInProgress(ticket)}
+                className="btn btn-accent p-2 border-0 rounded-lg"
+                onClick={() => onMoveToInProgress(ticket)}
             >
-            Move to In Progress
+                Move to In Progress
             </button>
         ) : (
             <span className="in-progress-label">In Progress</span>
         )}
+    </div>
+    <p className="ticket-description my-4">{ticket.description}</p>
+
+    <div className="flex gap-2 mt-2 justify-between items-center">
+        <div className="flex">
+            <span className="ticket-id">#{ticket.id}</span>
+            <span className={`priority-badge text-error ml-2 uppercase ${getPriorityClass(ticket.priority)}`}>
+                {ticket.priority} PRIORITY
+            </span>
         </div>
+        {/*  */}
+        <div className="flex gap-2 mt-2">
+            <span className="ticket-description">{ticket.customer}</span>
+            <span className="ticket-date ticket-description">
+                <div className="flex gap-1">
+                    <img src={Calender} alt="Calendar" />
+                    {formatDate(ticket.createdAt)}
+                </div>
+            </span>
+        </div>
+    </div>
+
+    
+</div>
     );
     };
 

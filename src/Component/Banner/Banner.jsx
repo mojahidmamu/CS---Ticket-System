@@ -18,7 +18,7 @@ const Banner = () => {
             <div
                 className="flex-1 rounded-xl text-white p-6 flex flex-col justify-center items-center"
                 style={{ 
-                    background: 'linear-gradient(135deg, #54CF68 0%, 00827A 100%)'
+                    background: 'linear-gradient(135deg, #54CF68 0%, #00827A 100%)'
                 }}
             >
                 <h2 className="text-lg font-semibold mb-2">Resolved</h2>
