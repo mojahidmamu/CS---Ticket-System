@@ -1,0 +1,139 @@
+{
+  "tickets": [
+    {
+      "id": "TICK-001",
+      "title": "Unable to access email account",
+      "description": "User receives 'invalid password' error when trying to log in, even after password reset",
+      "customer": "John Smith",
+      "priority": "high",
+      "status": "in-progress",
+      "createdAt": "2026-03-01T09:30:00Z"
+    },
+    {
+      "id": "TICK-002",
+      "title": "Billing discrepancy on recent invoice",
+      "description": "Invoice #INV-2026-02 shows double charges for premium subscription",
+      "customer": "Sarah Johnson",
+      "priority": "medium",
+      "status": "open",
+      "createdAt": "2026-03-02T14:15:00Z"
+    },
+    {
+      "id": "TICK-003",
+      "title": "Feature request: Dark mode",
+      "description": "Customer would like dark mode option for mobile app to reduce eye strain",
+      "customer": "Michael Chen",
+      "priority": "low",
+      "status": "closed",
+      "createdAt": "2026-02-28T11:45:00Z"
+    },
+    {
+      "id": "TICK-004",
+      "title": "System crash on startup",
+      "description": "Application crashes immediately after splash screen on Windows 11",
+      "customer": "Emily Rodriguez",
+      "priority": "critical",
+      "status": "in-progress",
+      "createdAt": "2026-03-01T16:20:00Z"
+    },
+    {
+      "id": "TICK-005",
+      "title": "Data export not working",
+      "description": "Export to CSV function hangs at 75% completion",
+      "customer": "David Kim",
+      "priority": "high",
+      "status": "open",
+      "createdAt": "2026-03-02T10:00:00Z"
+    },
+    {
+      "id": "TICK-006",
+      "title": "Password reset email delayed",
+      "description": "Reset emails taking 15+ minutes to arrive",
+      "customer": "Lisa Thompson",
+      "priority": "medium",
+      "status": "resolved",
+      "createdAt": "2026-02-27T08:30:00Z"
+    },
+    {
+      "id": "TICK-007",
+      "title": "Mobile app notification issues",
+      "description": "Push notifications not appearing on iOS devices after latest update",
+      "customer": "Robert Garcia",
+      "priority": "high",
+      "status": "in-progress",
+      "createdAt": "2026-03-01T13:45:00Z"
+    },
+    {
+      "id": "TICK-008",
+      "title": "Account upgrade not reflecting",
+      "description": "User upgraded to Pro plan but still seeing Basic features",
+      "customer": "Amanda White",
+      "priority": "critical",
+      "status": "open",
+      "createdAt": "2026-03-02T09:15:00Z"
+    },
+    {
+      "id": "TICK-009",
+      "title": "Documentation typo",
+      "description": "Step 3 in installation guide references incorrect file name",
+      "customer": "Thomas Brown",
+      "priority": "low",
+      "status": "closed",
+      "createdAt": "2026-02-26T15:30:00Z"
+    },
+    {
+      "id": "TICK-010",
+      "title": "Integration with Slack failing",
+      "description": "Webhook returns 401 error when attempting to connect",
+      "customer": "Jennifer Lee",
+      "priority": "medium",
+      "status": "in-progress",
+      "createdAt": "2026-03-01T11:20:00Z"
+    },
+    {
+      "id": "TICK-011",
+      "title": "Slow dashboard loading",
+      "description": "Main dashboard takes 30+ seconds to load with large datasets",
+      "customer": "William Taylor",
+      "priority": "high",
+      "status": "open",
+      "createdAt": "2026-03-02T08:45:00Z"
+    },
+    {
+      "id": "TICK-012",
+      "title": "Two-factor authentication setup",
+      "description": "QR code not displaying during 2FA setup process",
+      "customer": "Maria Martinez",
+      "priority": "medium",
+      "status": "resolved",
+      "createdAt": "2026-02-29T10:30:00Z"
+    },
+    {
+      "id": "TICK-013",
+      "title": "Search function returning incomplete results",
+      "description": "Search missing items that contain exact keywords",
+      "customer": "James Wilson",
+      "priority": "high",
+      "status": "in-progress",
+      "createdAt": "2026-03-01T14:50:00Z"
+    },
+    {
+      "id": "TICK-014",
+      "title": "API rate limit too restrictive",
+      "description": "Enterprise customer hitting rate limits during normal operations",
+      "customer": "Patricia Moore",
+      "priority": "medium",
+      "status": "open",
+      "createdAt": "2026-03-02T12:10:00Z"
+    },
+    {
+      "id": "TICK-015",
+      "title": "Email attachment size limit",
+      "description": "Unable to send files over 5MB through support email",
+      "customer": "Kevin Zhang",
+      "priority": "low",
+      "status": "closed",
+      "createdAt": "2026-02-25T09:00:00Z"
+    }
+  ]
+}
