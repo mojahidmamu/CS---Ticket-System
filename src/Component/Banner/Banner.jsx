@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Banner = ({inProgressCount }) => {
+const Banner = ({inProgressCount , resolvedCount}) => {
     return (
         <div className="flex flex-col sm:flex-row gap-4 p-4">
             {/* In-Progress Card */}
@@ -22,7 +22,7 @@ const Banner = ({inProgressCount }) => {
                 }}
             >
                 <h2 className="text-lg font-semibold mb-2">Resolved</h2>
-                <p className="text-4xl font-bold">0</p>
+                <p className="text-4xl font-bold">{resolvedCount}</p>
             </div>
         </div>
     );

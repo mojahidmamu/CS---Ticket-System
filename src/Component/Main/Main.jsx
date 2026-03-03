@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import TaskStatus from '../Ticket/TaskStatus';
 import TicketCard from '../Ticket/TicketCard'; 
 
-const Main = ( { inProgressTickets, setInProgressTickets }) => {
+const Main = ( { inProgressTickets, setInProgressTickets,   resolvedTickets, setResolvedTickets}) => {
     const [tickets, setTickets] = useState([]);
     // const [inProgressTickets, setInProgressTickets] = useState([]);
 
@@ -22,10 +22,26 @@ const Main = ( { inProgressTickets, setInProgressTickets }) => {
         }
     };
 
-    const handleCompleteTicket = (completedTicket) => {
-        setInProgressTickets(inProgressTickets.filter((t) => t.id !== completedTicket.id));
-        alert(`Ticket ${completedTicket.id} marked as complete`);
+
+    const handleComplete = (ticket) => {
+
+        // 1️⃣ Remove from In Progress
+        const updatedInProgress = inProgressTickets.filter(
+        (t) => t.id !== ticket.id
+        );
+
+        setInProgressTickets(updatedInProgress);
+
+        // 2️⃣ Add to Resolved
+        setResolvedTickets([...resolvedTickets, ticket]);
+
+        alert("Task Completed ✅");
     };
+
+    // const handleCompleteTicket = (completedTicket) => {
+    //     setInProgressTickets(inProgressTickets.filter((t) => t.id !== completedTicket.id));
+    //     alert(`Ticket ${completedTicket.id} marked as complete`);
+    // };
 
     return (
         <div className="app-container">
@@ -54,7 +70,8 @@ const Main = ( { inProgressTickets, setInProgressTickets }) => {
 
             {/* Right: Task Status Section */}
             <div className="task-status-wrappe w-1/4">
-            <TaskStatus inProgressTickets={inProgressTickets} onComplete={handleCompleteTicket} />
+            <TaskStatus inProgressTickets={inProgressTickets} onComplete={handleComplete}    resolvedTickets={resolvedTickets}
+          setResolvedTickets={setResolvedTickets}/>
             </div>
         </div>
         </div>

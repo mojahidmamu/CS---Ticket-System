@@ -1,6 +1,6 @@
     import "./TaskStatus.css";
 
-    const TaskStatus = ({ inProgressTickets, onComplete }) => {
+    const TaskStatus = ({ inProgressTickets, onComplete, resolvedTickets, }) => {
     return (
         <div className="task-status">
         <h2 className='font-bold text-xl'>Task Status</h2>
@@ -22,6 +22,22 @@
                     >
                         Complete
                     </button>
+                    </div>
+                </div>
+            ))}
+            </div>
+        )}
+        {/* Resolved */}
+        <div className="task-count ">Resolved: {resolvedTickets.length}</div>
+
+        {resolvedTickets.length === 0 ? (
+            <p className="no-tasks">No tasks resolved</p>
+        ) : (
+            <div className="tasks-list">
+            {resolvedTickets.map((ticket) => (
+                <div key={ticket.id} className="task-item  flex flex-col gap-2">
+                    <div className="task-info">
+                        <span className="font-bold">{ticket.title}</span>
                     </div>
                 </div>
             ))}
