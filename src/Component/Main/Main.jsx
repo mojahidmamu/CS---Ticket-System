@@ -9,7 +9,7 @@ const Main = () => {
     useEffect(() => {
         fetch("./Data.json")
             .then(res => res.json())
-            .then(data => setTickets(data));
+            .then(data => setTickets(data.tickets));
     }, []);
     // console.log(tickets);
 
