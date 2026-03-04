@@ -71,7 +71,7 @@ const Main = ( { inProgressTickets, setInProgressTickets,   resolvedTickets, set
             {/* Right: Task Status Section */}
             <div className="task-status-wrappe w-1/4">
             <TaskStatus inProgressTickets={inProgressTickets} onComplete={handleComplete}    resolvedTickets={resolvedTickets}
-          setResolvedTickets={setResolvedTickets}/>
+                setResolvedTickets={setResolvedTickets}/>
             </div>
         </div>
         </div>
