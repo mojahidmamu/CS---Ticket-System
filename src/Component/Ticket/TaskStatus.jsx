@@ -16,18 +16,20 @@
                         <span className="font-bold">{ticket.title}</span>
                     </div>
                     <div className="w-full">
-                        <button
+                    <button
                         className="complete-btn btn btn-success w-full p-2 border-0 rounded-lg"
                         onClick={() => onComplete(ticket)}
                     >
                         Complete
                     </button>
+                    
                     </div>
                 </div>
             ))}
             </div>
         )}
         {/* Resolved */}
+        <h2 className="font-bold text-xl ">Resolved Tasks</h2>
         <div className="task-count ">Resolved: {resolvedTickets.length}</div>
 
         {resolvedTickets.length === 0 ? (
