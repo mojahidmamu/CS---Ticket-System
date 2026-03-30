@@ -5,6 +5,9 @@ import Banner from './Component/Banner/Banner'
 import './index.css'
 import { useState } from 'react'
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() { 
 
   const [inProgressTickets, setInProgressTickets] = useState([]);
@@ -24,6 +27,8 @@ function App() {
       </div>
 
       <Footer />
+
+      <ToastContainer position="top-right"></ToastContainer>
     </>
   )
 }

@@ -4,7 +4,7 @@
     const TicketCard = ({ ticket, onMoveToInProgress, isInProgress }) => {
     // Priority class assign
     const getPriorityClass = (priority) => {
-        switch (priority) {
+        switch (priority.toUpperCase()) {
         case "HIGH":
             return "priority-high";
         case "MEDIUM":
@@ -36,6 +36,7 @@
             <button
                 className="btn btn-accent p-2 border-0 rounded-lg"
                 onClick={() => onMoveToInProgress(ticket)}
+                disabled={isInProgress}   
             >
                 Move to In Progress
             </button>
@@ -57,7 +58,7 @@
             <span className="ticket-description">{ticket.customer}</span>
             <span className="ticket-date ticket-description">
                 <div className="flex gap-1">
-                    <img src={Calender} alt="Calendar" />
+                    <img className="w-6 h-6" src={Calender} alt="Calendar" />
                     {formatDate(ticket.createdAt)}
                 </div>
             </span>
