@@ -7,7 +7,7 @@
         <div className="task-count ">In Progress: {inProgressTickets.length}</div>
 
         {inProgressTickets.length === 0 ? (
-            <p className="no-tasks">No tasks in progress</p>
+            <p className="no-tasks">Select a ticket to add to Task Status</p>
         ) : (
             <div className="tasks-list">
             {inProgressTickets.map((ticket) => (
@@ -33,7 +33,7 @@
         <div className="task-count ">Resolved: {resolvedTickets.length}</div>
 
         {resolvedTickets.length === 0 ? (
-            <p className="no-tasks">No tasks resolved</p>
+            <p className="no-tasks">No resolved task yet.</p>
         ) : (
             <div className="tasks-list">
             {resolvedTickets.map((ticket) => (
