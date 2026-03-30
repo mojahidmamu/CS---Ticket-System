@@ -1,139 +1,110 @@
-{
-  "tickets": [
-    {
-      "id": "TICK-001",
-      "title": "Unable to access email account",
-      "description": "User receives 'invalid password' error when trying to log in, even after password reset",
-      "customer": "John Smith",
-      "priority": "high",
-      "status": "in-progress",
-      "createdAt": "2026-03-01T09:30:00Z"
-    },
-    {
-      "id": "TICK-002",
-      "title": "Billing discrepancy on recent invoice",
-      "description": "Invoice #INV-2026-02 shows double charges for premium subscription",
-      "customer": "Sarah Johnson",
-      "priority": "medium",
-      "status": "open",
-      "createdAt": "2026-03-02T14:15:00Z"
-    },
-    {
-      "id": "TICK-003",
-      "title": "Feature request: Dark mode",
-      "description": "Customer would like dark mode option for mobile app to reduce eye strain",
-      "customer": "Michael Chen",
-      "priority": "low",
-      "status": "closed",
-      "createdAt": "2026-02-28T11:45:00Z"
-    },
-    {
-      "id": "TICK-004",
-      "title": "System crash on startup",
-      "description": "Application crashes immediately after splash screen on Windows 11",
-      "customer": "Emily Rodriguez",
-      "priority": "critical",
-      "status": "in-progress",
-      "createdAt": "2026-03-01T16:20:00Z"
-    },
-    {
-      "id": "TICK-005",
-      "title": "Data export not working",
-      "description": "Export to CSV function hangs at 75% completion",
-      "customer": "David Kim",
-      "priority": "high",
-      "status": "open",
-      "createdAt": "2026-03-02T10:00:00Z"
-    },
-    {
-      "id": "TICK-006",
-      "title": "Password reset email delayed",
-      "description": "Reset emails taking 15+ minutes to arrive",
-      "customer": "Lisa Thompson",
-      "priority": "medium",
-      "status": "resolved",
-      "createdAt": "2026-02-27T08:30:00Z"
-    },
-    {
-      "id": "TICK-007",
-      "title": "Mobile app notification issues",
-      "description": "Push notifications not appearing on iOS devices after latest update",
-      "customer": "Robert Garcia",
-      "priority": "high",
-      "status": "in-progress",
-      "createdAt": "2026-03-01T13:45:00Z"
-    },
-    {
-      "id": "TICK-008",
-      "title": "Account upgrade not reflecting",
-      "description": "User upgraded to Pro plan but still seeing Basic features",
-      "customer": "Amanda White",
-      "priority": "critical",
-      "status": "open",
-      "createdAt": "2026-03-02T09:15:00Z"
-    },
-    {
-      "id": "TICK-009",
-      "title": "Documentation typo",
-      "description": "Step 3 in installation guide references incorrect file name",
-      "customer": "Thomas Brown",
-      "priority": "low",
-      "status": "closed",
-      "createdAt": "2026-02-26T15:30:00Z"
-    },
-    {
-      "id": "TICK-010",
-      "title": "Integration with Slack failing",
-      "description": "Webhook returns 401 error when attempting to connect",
-      "customer": "Jennifer Lee",
-      "priority": "medium",
-      "status": "in-progress",
-      "createdAt": "2026-03-01T11:20:00Z"
-    },
-    {
-      "id": "TICK-011",
-      "title": "Slow dashboard loading",
-      "description": "Main dashboard takes 30+ seconds to load with large datasets",
-      "customer": "William Taylor",
-      "priority": "high",
-      "status": "open",
-      "createdAt": "2026-03-02T08:45:00Z"
-    },
-    {
-      "id": "TICK-012",
-      "title": "Two-factor authentication setup",
-      "description": "QR code not displaying during 2FA setup process",
-      "customer": "Maria Martinez",
-      "priority": "medium",
-      "status": "resolved",
-      "createdAt": "2026-02-29T10:30:00Z"
-    },
-    {
-      "id": "TICK-013",
-      "title": "Search function returning incomplete results",
-      "description": "Search missing items that contain exact keywords",
-      "customer": "James Wilson",
-      "priority": "high",
-      "status": "in-progress",
-      "createdAt": "2026-03-01T14:50:00Z"
-    },
-    {
-      "id": "TICK-014",
-      "title": "API rate limit too restrictive",
-      "description": "Enterprise customer hitting rate limits during normal operations",
-      "customer": "Patricia Moore",
-      "priority": "medium",
-      "status": "open",
-      "createdAt": "2026-03-02T12:10:00Z"
-    },
-    {
-      "id": "TICK-015",
-      "title": "Email attachment size limit",
-      "description": "Unable to send files over 5MB through support email",
-      "customer": "Kevin Zhang",
-      "priority": "low",
-      "status": "closed",
-      "createdAt": "2026-02-25T09:00:00Z"
-    }
-  ]
-}
+[
+  {
+    "id": "TKT-1001",
+    "title": "Unable to login after password reset",
+    "description": "User receives 'Invalid credentials' error even after resetting password. Tried clearing cache and using incognito mode.",
+    "customer": "Acme Corp",
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2025-03-15T09:23:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "API endpoint returning 500 errors",
+    "description": "The /api/v2/invoices endpoint has been intermittently failing with 500 errors since yesterday. Approximately 15% of requests failing.",
+    "customer": "TechStart Inc",
+    "priority": "critical",
+    "status": "open",
+    "createdAt": "2025-03-14T14:15:00Z"
+  },
+  {
+    "id": "TKT-1003",
+    "title": "Feature request: Bulk export functionality",
+    "description": "Customer requesting ability to export multiple reports simultaneously instead of one at a time.",
+    "customer": "Global Solutions Ltd",
+    "priority": "low",
+    "status": "backlog",
+    "createdAt": "2025-03-10T11:45:00Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "Mobile app crashes on startup",
+    "description": "App crashes immediately after splash screen on iOS 17.5 devices. Crash logs attached.",
+    "customer": "Sarah Johnson",
+    "priority": "urgent",
+    "status": "in-progress",
+    "createdAt": "2025-03-15T08:00:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "Incorrect billing calculation",
+    "description": "Invoice #INV-2345 shows double charge for subscription tier. Customer was overcharged by $49.99.",
+    "customer": "Michael Chen",
+    "priority": "high",
+    "status": "resolved",
+    "createdAt": "2025-03-12T16:20:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "Slow dashboard loading times",
+    "description": "Dashboard takes 15-20 seconds to load. Previously loaded in under 3 seconds. Affects all users in EU region.",
+    "customer": "Nordic Enterprises",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "2025-03-13T10:30:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Documentation update needed",
+    "description": "Webhook documentation outdated. New fields added in v2 API not documented.",
+    "customer": "DevConnect",
+    "priority": "low",
+    "status": "backlog",
+    "createdAt": "2025-03-09T13:15:00Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Cannot add team members",
+    "description": "Admin users unable to invite new team members. 'Invite' button greyed out despite having available seats.",
+    "customer": "StartupHub",
+    "priority": "high",
+    "status": "in-progress",
+    "createdAt": "2025-03-14T09:45:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "Email notifications not sending",
+    "description": "Users report not receiving email notifications for mentions or task assignments. SMTP logs show no errors.",
+    "customer": "Creative Agency Co",
+    "priority": "critical",
+    "status": "open",
+    "createdAt": "2025-03-15T07:30:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Search results incomplete",
+    "description": "Search function not returning all relevant results. Missing approximately 30% of expected records.",
+    "customer": "DataMetrics LLC",
+    "priority": "medium",
+    "status": "in-progress",
+    "createdAt": "2025-03-11T14:50:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "SSO integration failing",
+    "description": "Okta SSO authentication suddenly stopped working. Users redirected to error page after login attempt.",
+    "customer": "FinTech Solutions",
+    "priority": "urgent",
+    "status": "open",
+    "createdAt": "2025-03-15T11:00:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "Dark mode UI glitches",
+    "description": "Text visibility issues in dark mode. Some buttons have white text on white background.",
+    "customer": "Design Studio",
+    "priority": "low",
+    "status": "backlog",
+    "createdAt": "2025-03-08T16:45:00Z"
+  }
+]
